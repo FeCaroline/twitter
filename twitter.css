@@ -59,21 +59,31 @@ body{
   height: 240px;
   padding: 10px;
   border: 1px solid #999;
+  display:flex;
+  flex-direction: column;
+
 
 }
 
-#profile >i{
-  size: 40px;
-  color:gray;
-  flex: 0 1 60%;
+.icon-user{
+  size: 120px;
+  color:black;
+  display:flex;
+  justify-content: center;
+  font-size: 100px;
+  /* flex: 0 1 60%; */
 }
 
 
-#profile > span {
-flex: 0 1 40%;
+span {
+/* flex: 0 1 40%; */
+display:flex;
+justify-content: center;
 font-family: 'Source Sans Pro', sans-serif;
 text-align: center;
-flex-direction: row;
+vertical-align:text-bottom;
+font-size: 30px;
+/* flex-direction: row; */
 
 }
 

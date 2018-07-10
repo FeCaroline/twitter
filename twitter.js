@@ -55,3 +55,15 @@ function startCount(){
   console.log("Entrou")
   document.getElementById("count").innerHTML="140";
 }
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function getNow() {
+  var today = new Date();
+  return checkTime(today.getHours()) + ":" + checkTime(today.getMinutes());
+}

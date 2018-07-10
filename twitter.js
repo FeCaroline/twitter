@@ -31,11 +31,6 @@ function enableButton(){
 // // 120 não funciona
 
 
-  document.getElementById("count").innerHTML = count;
-  elemento.style.height = "1px";
-  elemento.style.height = (25+elemento.scrollHeight)+"px";
-}
-
 
 function startCount(){
   console.log("Entrou")

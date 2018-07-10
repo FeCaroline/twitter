@@ -45,9 +45,7 @@ function enableButton(){
 
   }
 
-
-
-function startCount(){
-  console.log("Entrou")
-  document.getElementById("count").innerHTML="140";
+  document.getElementById("count").innerHTML = count;
+  elemento.style.height = "1px";
+  elemento.style.height = (25+elemento.scrollHeight)+"px";
 }

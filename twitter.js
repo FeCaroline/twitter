@@ -49,3 +49,9 @@ function enableButton(){
   elemento.style.height = "1px";
   elemento.style.height = (25+elemento.scrollHeight)+"px";
 }
+
+
+function startCount(){
+  console.log("Entrou")
+  document.getElementById("count").innerHTML="140";
+}

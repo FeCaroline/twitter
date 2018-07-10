@@ -29,6 +29,21 @@ function enableButton(){
 // }
 //
 // // 120 não funciona
+  if(texto.length >= 140){
+    document.getElementById('count').className = '';
+    document.getElementById('count').classList.add("vermelho");
+  }
+  if (texto.length > 130) {
+    document.getElementById('count').className = '';
+    document.getElementById('count').classList.add("amarelo");
+  }
+  if (texto.length > 120) {
+    document.getElementById('count').className = '';
+    document.getElementById('count').classList.add("verde");
+  } else {
+    document.getElementById('count').className = '';
+
+  }
 
 
 

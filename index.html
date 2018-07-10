@@ -5,7 +5,6 @@
   <link rel="stylesheet" type="text/css" href="twitter.css"/>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
   <link href="https://file.myfontastic.com/SsXgvxcEtcBGqKuDA7oj3n/icons.css" rel="stylesheet">
-  <link href="https://file.myfontastic.com/SsXgvxcEtcBGqKuDA7oj3n/icons.css" rel="stylesheet">
   <title>Twitter</title>
 </head>
 <body onLoad="startCount()">
@@ -15,14 +14,14 @@
   </div>
   <div class="tweet-space">
     <div id="profile">
-      <i class="icon-user"></i>
+      <div class="icon-user"></div>
       <span class="user">Aluna da Laboratoria</span>
     </div>
     <form id="newTweet" method="post">
-        <textarea name="tweet-text" id="tweet-text" value="" placeholder="O que está acontecendo?"  onkeyup="enableButton()" maxlength="140"></textarea>
+        <textarea name="tweet-text" id="tweet-text" value="" placeholder="O que está acontecendo?"  onkeypress="enableButton()"></textarea>
 
         <input type="button" name="twettar" id="tweetar" value="tweetar" onclick="tweet()" disabled=true>
-        <label id="count" name="count"></label>
+        <div id="count" name="count">140</div>
     </form>
   </div>
   <div id="personal-tweet">

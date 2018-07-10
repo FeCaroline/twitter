@@ -18,32 +18,22 @@ function enableButton(){
 
     }
 
-// if(texto.length >= 140){
-//   document.getElementById('count').classList.add("vermelho");
-// }
-// if (texto.length >= 130) {
-//   document.getElementById('count').classList.add("amarelo");
-// }
-// if (texto.length >= 120 || <=129) {
-//   document.getElementById('count').classList.add("verde");
-// }
-//
-// // 120 não funciona
-  if(texto.length >= 140){
-    document.getElementById('count').className = '';
-    document.getElementById('count').classList.add("vermelho");
-  }
-  if (texto.length > 130) {
-    document.getElementById('count').className = '';
-    document.getElementById('count').classList.add("amarelo");
-  }
-  if (texto.length > 120) {
-    document.getElementById('count').className = '';
-    document.getElementById('count').classList.add("verde");
-  } else {
-    document.getElementById('count').className = '';
+if (texto.length >= 120 ) {
+  document.getElementById('count').className = '';
+  document.getElementById('count').classList.add("verde");
+}
+if (texto.length >= 130 ) {
+  document.getElementById('count').className = '';
+  document.getElementById('count').classList.add("amarelo");
+}
+if(texto.length >= 140){
+  document.getElementById('count').className = '';
+  document.getElementById('count').classList.add("vermelho");
+} else {
+document.getElementById('count').className = '';
+}
 
-  }
+  
 
   document.getElementById("count").innerHTML = count;
   elemento.style.height = "1px";

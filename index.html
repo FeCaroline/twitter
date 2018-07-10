@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="twitter.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+  <link href="https://file.myfontastic.com/SsXgvxcEtcBGqKuDA7oj3n/icons.css" rel="stylesheet">
+  <link href="https://file.myfontastic.com/SsXgvxcEtcBGqKuDA7oj3n/icons.css" rel="stylesheet">
+  <title>Twitter</title>
+</head>
+<body onLoad="startCount()">
+  <div id="barra-topo">
+    <i class="icon-social-twitter"></i>
+    <span class="nome">Twitter</span>
+  </div>
+  <div class="tweet-space">
+    <div id="profile">
+      <i class="icon-user"></i>
+      <span class="user">Aluna da Laboratoria</span>
+    </div>
+    <form id="newTweet" method="post">
+        <textarea name="tweet-text" id="tweet-text" value="" placeholder="O que está acontecendo?"  onkeyup="enableButton()" maxlength="140"></textarea>
+
+        <input type="button" name="twettar" id="tweetar" value="tweetar" onclick="tweet()" disabled=true>
+        <label id="count" name="count"></label>
+    </form>
+  </div>
+  <div id="personal-tweet">
+    <!-- <p class="personal-tweet"></p> -->
+  </div>
+</body>
+<script type="text/javascript" src="twitter.js"></script>
+</html>

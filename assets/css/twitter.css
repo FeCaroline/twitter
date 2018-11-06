@@ -1,0 +1,179 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body{
+  /* background-color: #eee; */
+  background-image: url("./assets/img/grama.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+
+
+
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#barra-topo {
+  background-color: #1DA1F2;
+  display: flex;
+  padding: 15px 60px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  font-weight: 650;
+  font-size: 20px;
+}
+
+#barra-topo > i {
+  flex: 0 1 10%;
+}
+
+#barra-topo > span {
+  flex: 0 1 90%;
+  text-align: center;
+  margin-left: -6%;
+}
+
+.tweet-space {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  align-content: space-between;
+}
+
+.tweet-space > div#profile {
+  flex: 0 1 20%;
+  margin: auto;
+  background-color: white;
+}
+.tweet-space > form#newTweet {
+  flex: 0 1 50%;
+  margin: auto;
+  background-color: white;
+}
+
+#profile {
+  height: 240px;
+  weight: 220px;
+  padding: 10px;
+  border: 1px solid #999;
+  display:flex;
+  flex-direction: column;
+
+  }
+  .profile-photo {
+    border-radius: 50%;
+    height:160px;
+    weight:160px;
+
+
+}
+
+.icon-user{
+  size: 120px;
+  color:black;
+  display:flex;
+  justify-content: center;
+  font-size: 100px;
+  /* flex: 0 1 60%; */
+}
+
+
+span {
+/* flex: 0 1 40%; */
+display:flex;
+justify-content: center;
+font-family: 'Source Sans Pro', sans-serif;
+text-align: center;
+vertical-align:text-bottom;
+font-size: 30px;
+/* flex-direction: row; */
+
+}
+
+
+#newTweet {
+  display: flex;
+  flex-wrap: wrap;
+  height: 240px;
+  padding: 10px;
+  border: 1px solid #999;
+  flex-grow: 0;
+}
+
+#newTweet > #tweet-text {
+  flex: 0 1 100%;
+  width: 100%;
+  border: 0px;
+  font-size: 15px;
+  border-bottom: 2px solid #1DA1F2;
+  resize: none;
+  margin-bottom: 20px;
+  min-height: 80px;
+  max-height: 160px;
+  overflow: hidden;
+}
+
+#newTweet > #tweet-text:focus {
+  outline: none;
+}
+
+#newTweet > #tweetar {
+  flex: 0 1 18%;
+  background-color: #1DA1F2;
+  border: 1px solid #999;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0px;
+  height: 40px;
+}
+
+#newTweet > #count {
+  right: 0px;
+  flex: 0 1 82%;
+  font-size: 24px;
+  color: #003152;
+  text-align: right;
+  vertical-align: middle;
+  display: block;
+}
+
+#newTweet > #count.vermelho {
+  color: red;
+}
+
+#newTweet > #count.amarelo {
+  color: yellow;
+}
+
+#newTweet > #count.verde {
+  color: green;
+}
+#personal-tweet {
+  display: flex;
+  flex-flow: wrap;
+  align-content: space-around;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+#personal-tweet > p.tweet {
+  flex: 0 1 85%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 10px;
+  margin-bottom: 10px;
+}

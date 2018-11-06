@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="twitter.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/twitter.css"/>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
   <link href="https://file.myfontastic.com/SsXgvxcEtcBGqKuDA7oj3n/icons.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
   <title>Twitter</title>
 </head>
 <body onLoad="startCount()">
@@ -14,8 +15,10 @@
   </div>
   <div class="tweet-space">
     <div id="profile">
-      <div class="icon-user"></div>
-      <span class="user">Aluna da Laboratoria</span>
+
+<img class="profile-photo" src="./assets/img/bella.jpeg" alt="">
+      <span class="user">Bem Vinda,</span>
+      <span class="user">Bella</span>
     </div>
     <form id="newTweet" method="post">
         <textarea name="tweet-text" id="tweet-text" value="" placeholder="O que está acontecendo?"  onkeypress="enableButton()"></textarea>
@@ -28,5 +31,5 @@
     <!-- <p class="personal-tweet"></p> -->
   </div>
 </body>
-<script type="text/javascript" src="twitter.js"></script>
+<script type="text/javascript" src="./assets/js/twitter.js"></script>
 </html>
